@@ -1,0 +1,8 @@
+INSTUPfuzzy.test_4_1
+E:\code\Demo_6_17_2014\fuzzy\test_4_1.py
+INFOS:&&2|1|2|0&&3|3|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0
+f=1
+A=4
+B=5
+R=3
+fuzzy.test_4_1=2

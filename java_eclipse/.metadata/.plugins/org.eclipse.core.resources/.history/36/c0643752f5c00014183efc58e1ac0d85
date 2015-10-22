@@ -1,0 +1,30 @@
+package com.scut.math.action;
+
+import java.io.File;
+import java.util.ArrayList;
+
+public class ImgReadAction {
+
+	private ArrayList<String> imgNameStrings;
+	private String dirName;
+	public ImgReadAction(String dirName){
+		this.dirName=dirName;
+	}
+	public ArrayList<String> getImgNameStrings() {
+		return imgNameStrings;
+	}
+	public void setImgNameStrings() {
+		File file=new File(this.dirName);
+		
+		if (file.isDirectory()) {
+			File[] files=file.listFiles();
+			for (File f : files) {
+				if (f.isFile()&&f.getName().endsWith("bmp")) {
+					System.out.println(f.getName());
+					imgNameStrings.add(f.getName());
+				}
+			}
+		}
+	}
+	
+}

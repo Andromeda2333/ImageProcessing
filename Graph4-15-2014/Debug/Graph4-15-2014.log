@@ -1,0 +1,21 @@
+﻿Build started 2014/6/10 8:35:34.
+     1>Project "E:\CodeBOX\VC\Graph4-15-2014\Graph4-15-2014\Graph4-15-2014.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Graph4-15-2014.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Graph4-15-2014.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Graph4-15-2014.cpp" Node.cpp
+         Graph4-15-2014.cpp
+     1>e:\codebox\vc\graph4-15-2014\graph4-15-2014\graph4-15-2014.cpp(119): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Node.cpp
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CodeBOX\VC\Graph4-15-2014\Debug\Graph4-15-2014.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CodeBOX\VC\Graph4-15-2014\Debug\Graph4-15-2014.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CodeBOX\VC\Graph4-15-2014\Debug\Graph4-15-2014.lib" /MACHINE:X86 "Debug\Graph4-15-2014.obj"
+         Debug\Node.obj
+         Debug\stdafx.obj
+         Graph4-15-2014.vcxproj -> E:\CodeBOX\VC\Graph4-15-2014\Debug\Graph4-15-2014.exe
+     1>Done Building Project "E:\CodeBOX\VC\Graph4-15-2014\Graph4-15-2014\Graph4-15-2014.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.86

@@ -1,0 +1,14 @@
+﻿Build started 2014/7/16 10:12:54.
+     1>Project "E:\CodeBOX\VC\OPencv12-18-2013\OPencv12-18-2013\OPencv12-18-2013.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CodeBOX\VC\OPencv12-18-2013\Debug\OPencv12-18-2013.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_objdetect248d.lib opencv_ts248d.lib opencv_video248d.lib opencv_calib3d246d.lib opencv_contrib246d.lib opencv_core246d.lib opencv_features2d246d.lib opencv_flann246d.lib opencv_gpu246d.lib opencv_highgui246d.lib opencv_imgproc246d.lib opencv_legacy246d.lib opencv_ml246d.lib opencv_objdetect246d.lib opencv_ts246d.lib opencv_video246d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CodeBOX\VC\OPencv12-18-2013\Debug\OPencv12-18-2013.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CodeBOX\VC\OPencv12-18-2013\Debug\OPencv12-18-2013.lib" /MACHINE:X86 Debug\Demo.obj
+         Debug\Histogram1D.obj
+         "Debug\OPencv12-18-2013.obj"
+         Debug\Solver.obj
+         Debug\stdafx.obj
+     1>LINK : fatal error LNK1104: cannot open file 'opencv_calib3d246d.lib'
+     1>Done Building Project "E:\CodeBOX\VC\OPencv12-18-2013\OPencv12-18-2013\OPencv12-18-2013.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.19

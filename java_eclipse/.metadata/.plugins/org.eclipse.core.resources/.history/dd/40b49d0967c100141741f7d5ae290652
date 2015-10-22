@@ -1,0 +1,93 @@
+package com.scut.math.doAction;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+import java.util.Vector;
+
+import org.opencv.core.Mat;
+
+import com.scut.math.action.DataFormat;
+import com.scut.math.bean.DataBean;
+import com.scut.math.bean.ImgBean;
+
+import libsvm.svm_node;
+
+public class DataFormatAction implements DataFormat {
+	/* (non-Javadoc)
+	 * @see com.scut.math.doAction.DataFormat#dataFormat(java.lang.Math)
+	 */
+	
+	//将单张图片分解后的特征值转化为libsvm所能处理的数据集，一张图片为训练集或者测试集中的一行记录
+	public svm_node[] dataFormat(Mat svdValue) {
+		int n=(int) svdValue.total();
+		svm_node[] nodes=new svm_node[n];
+		
+		svm_node tmpNode;
+		for (int i = 0; i < n; i++) {
+			tmpNode=new svm_node();
+			tmpNode.index=i+1;
+			tmpNode.value=svdValue.get(i, 0)[0];
+			nodes[i]=tmpNode;
+		}
+		return nodes;
+	}
+	
+	//将所有图片的特征向量转化为ibsvm所能处理的数据集
+	public svm_node[][] datasFormat(ArrayList<ImgBean> imgBeans) {
+		int n=imgBeans.size();
+		int m=(int) imgBeans.get(0).getValue().total();
+		svm_node[][] datas=new svm_node[n][m];
+		for (int i = 0; i < n; i++) {
+			datas[i]=dataFormat(imgBeans.get(i).getValue());
+			
+		}
+		return datas;
+	}
+	
+	//获取数据集对应的人名集
+	public ArrayList<String> getPersonName(ArrayList<ImgBean> imgBeans) {
+		ArrayList<String> nameStrings=new ArrayList<String>();
+		for (ImgBean img : imgBeans) {
+			nameStrings.add(img.getPersonName());
+		}
+		return nameStrings;
+	}
+	
+	//获取数据集对应的索引集
+	public ArrayList<Integer> getImgIndex(ArrayList<ImgBean> imgBeans) {
+		ArrayList<Integer> indexs=new ArrayList<Integer>();
+		for (ImgBean img : imgBeans) {
+			indexs.add(img.getId());
+		}
+		return indexs;
+	}
+	
+	//获取一个训练所需要的DataBean
+	public DataBean generateDataBean(String personName,ArrayList<String> personNames
+			,ArrayList<Integer> imgIndex,svm_node[][] datas) {
+//		DataBean dataBean=new DataBean();
+//		dataBean.set
+		
+		double[] trainLabels=new double[personNames.size()/2];
+		double[] testLabels=new double[personNames.size()/2];
+		Set<String> personNameSet=new HashSet<String>(personNames);
+		return null;
+	}
+	
+	private Set<Integer> getRandomSet(int maxIndex){
+		Set<Integer> set=new HashSet<Integer>();
+		Random random=new Random();
+		
+		while (set.size()<5) {
+			set.add(random.nextInt(236)%10+1);
+		}
+		return set;
+	}
+
+	public DataBean generateDataBean(String personName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

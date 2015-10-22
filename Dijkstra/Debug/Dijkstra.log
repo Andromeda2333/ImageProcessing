@@ -1,0 +1,16 @@
+﻿Build started 2014/3/29 16:03:49.
+     1>Project "E:\CodeBOX\VC\Dijkstra\Dijkstra\Dijkstra.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Dijkstra.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Dijkstra.cpp
+         Dijkstra.cpp
+     1>e:\codebox\vc\dijkstra\dijkstra\dijkstra.cpp(90): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\codebox\vc\dijkstra\dijkstra\dijkstra.cpp(116): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CodeBOX\VC\Dijkstra\Debug\Dijkstra.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_objdetect248d.lib opencv_ts248d.lib opencv_video248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CodeBOX\VC\Dijkstra\Debug\Dijkstra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CodeBOX\VC\Dijkstra\Debug\Dijkstra.lib" /MACHINE:X86 Debug\Dijkstra.obj
+         Debug\stdafx.obj
+         Dijkstra.vcxproj -> E:\CodeBOX\VC\Dijkstra\Debug\Dijkstra.exe
+     1>Done Building Project "E:\CodeBOX\VC\Dijkstra\Dijkstra\Dijkstra.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.85

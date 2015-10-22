@@ -1,0 +1,17 @@
+package svm_test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.scut.math.action.ImgReadAction;
+
+public class ImgReadActionTest {
+
+	@Test
+	public void imgReadActionTest(){
+		String path="C:\\Users\\lenovo\\Desktop\\ORL";
+		ImgReadAction imgReadAction=new ImgReadAction(path);
+	}
+
+}

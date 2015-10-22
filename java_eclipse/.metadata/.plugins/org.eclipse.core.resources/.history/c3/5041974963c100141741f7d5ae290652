@@ -1,0 +1,14 @@
+package com.scut.math.action;
+
+import java.util.ArrayList;
+
+import org.opencv.core.Mat;
+
+import com.scut.math.bean.ImgBean;
+
+import libsvm.svm_node;
+
+public interface DataFormat {
+	public abstract svm_node[][] datasFormat(ArrayList<ImgBean> imgBeans);
+
+}

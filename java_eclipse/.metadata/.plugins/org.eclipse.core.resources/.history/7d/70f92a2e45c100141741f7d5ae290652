@@ -1,0 +1,9 @@
+package com.scut.math.action;
+
+import libsvm.svm_node;
+
+public interface DataFormat {
+
+	public abstract svm_node[][] dataFormat(Math svdValue);
+
+}

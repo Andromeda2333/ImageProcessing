@@ -1,0 +1,8 @@
+package com.scut.math.bean;
+
+import java.lang.reflect.Array;
+import java.util.Vector;
+
+public class DataBean {
+	private Vector<Integer> train_labels=new Vector<Integer>();
+}

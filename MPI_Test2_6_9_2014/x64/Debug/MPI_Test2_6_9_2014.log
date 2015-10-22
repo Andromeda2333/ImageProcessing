@@ -1,0 +1,19 @@
+﻿Build started 2014/6/10 11:57:28.
+     1>Project "E:\CodeBOX\VC\MPI_Test2_6_9_2014\MPI_Test2_6_9_2014\MPI_Test2_6_9_2014.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D MPICH_SKIP_MPICXX /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\MPI_Test2_6_9_2014.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D MPICH_SKIP_MPICXX /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\MPI_Test2_6_9_2014.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt MPI_Test2_6_9_2014.cpp
+         MPI_Test2_6_9_2014.cpp
+     1>MPI_Test2_6_9_2014.cpp(39): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>MPI_Test2_6_9_2014.cpp(16): warning C4101: 'wtime' : unreferenced local variable
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CodeBOX\VC\MPI_Test2_6_9_2014\x64\Debug\MPI_Test2_6_9_2014.exe" /INCREMENTAL /NOLOGO mpi.lib cxx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CodeBOX\VC\MPI_Test2_6_9_2014\x64\Debug\MPI_Test2_6_9_2014.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CodeBOX\VC\MPI_Test2_6_9_2014\x64\Debug\MPI_Test2_6_9_2014.lib" /MACHINE:X64 x64\Debug\MPI_Test2_6_9_2014.obj
+         x64\Debug\stdafx.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         MPI_Test2_6_9_2014.vcxproj -> E:\CodeBOX\VC\MPI_Test2_6_9_2014\x64\Debug\MPI_Test2_6_9_2014.exe
+     1>Done Building Project "E:\CodeBOX\VC\MPI_Test2_6_9_2014\MPI_Test2_6_9_2014\MPI_Test2_6_9_2014.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.88

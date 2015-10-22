@@ -1,0 +1,14 @@
+﻿Build started 2014/6/11 15:09:44.
+     1>Project "E:\CodeBOX\VC\MPI_Demo_6_4_2014\MPI_Demo_6_4_2014\MPI_Demo_6_4_2014.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D MPICH_SKIP_MPICXX /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\MPI_Demo_6_4_2014.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt MPI_Demo_6_4_2014.cpp
+         MPI_Demo_6_4_2014.cpp
+     1>MPI_Demo_6_4_2014.cpp(10): error C2665: 'MPI::Init' : none of the 2 overloads could convert all the argument types
+                 E:\Program Files\MPICH2\include\mpicxx.h(2711): could be 'void MPI::Init(int &,char **&)'
+                 while trying to match the argument list '(int *, char **[])'
+     1>MPI_Demo_6_4_2014.cpp(12): error C2143: syntax error : missing ';' before 'return'
+     1>Done Building Project "E:\CodeBOX\VC\MPI_Demo_6_4_2014\MPI_Demo_6_4_2014\MPI_Demo_6_4_2014.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

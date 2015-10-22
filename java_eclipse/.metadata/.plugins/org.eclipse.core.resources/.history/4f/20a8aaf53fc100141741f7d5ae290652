@@ -1,0 +1,13 @@
+package com.scut.math.bean;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+import libsvm.svm_node;
+
+public class DataBean {
+	private Vector<Integer> trainLabels;
+	private Vector<Integer> testLabels;
+	private ArrayList<svm_node[][]> trainDataS;
+	private ArrayList<svm_node[][]> trainDataS;
+}

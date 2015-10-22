@@ -1,0 +1,26 @@
+package com.scut.math.doAction;
+
+import org.opencv.core.Mat;
+
+import com.scut.math.action.DataFormat;
+
+import libsvm.svm_node;
+
+public class DataFormatAction implements DataFormat {
+	/* (non-Javadoc)
+	 * @see com.scut.math.doAction.DataFormat#dataFormat(java.lang.Math)
+	 */
+	public svm_node[] dataFormat(Mat svdValue) {
+		int n=(int) svdValue.total();
+		svm_node[] nodes=new svm_node[n];
+		
+		svm_node tmpNode;
+		for (int i = 0; i < n; i++) {
+			tmpNode=new svm_node();
+			tmpNode.index=i+1;
+			tmpNode.value=svdValue.get(i, 0)[0];
+			nodes[i]=tmpNode;
+		}
+		return nodes;
+	}
+}

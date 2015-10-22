@@ -1,0 +1,29 @@
+package com.scut.math.doAction;
+
+import java.util.ArrayList;
+
+import org.opencv.core.Mat;
+
+import com.scut.math.action.ImgDecomp;
+import com.scut.math.bean.ImgBean;
+
+public class ImgDecompAction implements ImgDecomp {
+	/* (non-Javadoc)
+	 * @see com.scut.math.action.ImgDecomp#decomp(java.lang.String, org.opencv.core.Mat)
+	 */
+	public ImgBean decomp(String fileName,Mat src) {
+		String[] tmpStrings=fileName.split("_");
+		ImgBean imgBean=new ImgBean();
+		imgBean.setPersonName(tmpStrings[0]);
+		imgBean.setId(Integer.parseInt(tmpStrings[1]));
+		return null;
+		
+	}
+	/* (non-Javadoc)
+	 * @see com.scut.math.action.ImgDecomp#name(java.util.ArrayList, java.util.ArrayList)
+	 */
+	public ArrayList<Mat> name(ArrayList<String> fileNames,ArrayList<Mat> imgs) {
+		return imgs;
+		
+	}
+}

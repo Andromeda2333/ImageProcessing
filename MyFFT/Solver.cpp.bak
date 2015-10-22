@@ -1,0 +1,137 @@
+#include "stdafx.h"
+#include "Solver.h"
+
+const double PI=3.1415926;
+Solver::Solver(void)
+{
+}
+
+
+Solver::~Solver(void)
+{
+}
+
+cv::Mat Solver::Fft1( cv::Mat&vec ) 
+{
+	myVector tempVec;
+	int n=vec.cols;
+	for (size_t i=0;i<2*n;i+=2)
+	{
+		double real=vec.at<double>(0,i);
+		double image=vec.at<double>(0,i+1);
+		tempVec.push_back(std::complex<double>(real,image));
+	}
+	tempVec=FFT(tempVec);
+	cv::Mat result(vec.size(),vec.type(),cv::Scalar(0,0));
+	for (size_t i=0;i<n;++i)
+	{
+		double real=tempVec.at(i).real();
+		double image=tempVec.at(i).imag();;
+		result.at<double>(0,2*i)=real;
+		result.at<double>(0,2*i+1)=image;
+	}
+	return result;
+}
+
+myVector Solver::FFT( myVector& vec )
+{
+	int n=vec.size();
+
+	if (n==1)
+	{
+		return vec;
+	}
+	std::complex<double> tempW=std::exp(std::complex<double>(0,-2*PI/n));
+	std::complex<double> w(1,0);
+	myVector vecA0,vecA1;
+
+	for (size_t i=0;i<n;++i)
+	{
+		if (i%2==0)
+		{
+			vecA0.push_back(vec[i]);
+			continue;
+		}
+		vecA1.push_back(vec[i]);
+	}
+
+	myVector vecY0=FFT(vecA0);
+	myVector vecY1=FFT(vecA1);
+
+	myVector vecY(n,0);
+	for (size_t i=0;i<n/2;++i)
+	{
+		vecY[i]=vecY0[i]+w*vecY1[i];
+		vecY[i+n/2]=vecY0[i]-w*vecY1[i];
+		w=w*tempW;
+	}
+	return vecY;
+}
+
+cv::Mat Solver::Fft2( cv::Mat image )
+{
+	int m=image.rows;
+	int n=image.cols;
+	image.convertTo(image,CV_64F);
+
+	std::vector<myVector> tImage(m,myVector(n,std::complex<double>(0,0)));
+	std::vector<myVector> tTransImage(tImage);
+
+	for (size_t i=0;i<m;++i)
+	{
+		for (size_t j=0;j<n;++j)
+		{
+			double real=image.at<double>(i,j);
+			tImage.at(i).at(j)=std::complex<double>(real,0);
+		}
+	}
+
+	for (int r=0;r<m;++r)
+	{
+		tTransImage[r]=FFT(tImage.at(r));
+	}
+
+	for (int c=0;c<n;++c)
+	{
+		myVector temp;
+		for (int r=0;r<m;++r)
+		{
+			temp.push_back(tTransImage[r][c]);
+		}
+		temp=FFT(temp);
+		for (int i=0;i<m;++i)
+		{
+			tImage[i][c]=temp[i];
+		}
+	}
+	
+	cv::Mat res(image.size(),CV_64F,cv::Scalar::all(0));
+	for (int c=0;c<n;++c)
+	{
+		for (int r=0;r<m;++r)
+		{
+			res.at<double>(r,c)=std::abs(tImage[r][c]);
+		}
+	}
+
+	res+=cv::Scalar::all(1);
+	cv::log(res,res);
+
+	cv::Mat tempRes(res.size(),CV_64F,cv::Scalar::all(0));
+
+	for (int i=0;i<m;++i)
+	{
+		for (int j=0;j<n;++j)
+		{
+			int r=(i+m/2)%m;
+			int c=(j+n/2)%n;
+			tempRes.at<double>(r,c)=res.at<double>(i,j);
+		}
+	}
+
+	double maxV,minV;
+	cv::minMaxIdx(tempRes,&minV,&maxV);
+	tempRes=tempRes/maxV*255;
+	tempRes.convertTo(tempRes,CV_8UC1);
+	return tempRes;
+}

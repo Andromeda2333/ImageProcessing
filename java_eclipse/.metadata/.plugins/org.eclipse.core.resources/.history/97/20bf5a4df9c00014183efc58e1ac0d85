@@ -1,0 +1,9 @@
+package com.scut.math.bean;
+
+import org.opencv.core.Mat;
+
+public class ImgBean {
+	private String personName;
+	private int id;
+	private Mat value;
+}

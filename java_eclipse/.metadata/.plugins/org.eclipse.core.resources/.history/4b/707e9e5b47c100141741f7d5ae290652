@@ -1,0 +1,11 @@
+package com.scut.math.action;
+
+import org.opencv.core.Mat;
+
+import libsvm.svm_node;
+
+public interface DataFormat {
+
+	public abstract svm_node[][] dataFormat(Mat svdValue);
+
+}

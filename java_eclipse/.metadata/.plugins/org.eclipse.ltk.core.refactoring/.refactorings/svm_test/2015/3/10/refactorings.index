@@ -1,0 +1,12 @@
+1425310570494	Encapsulate field 'imgNameStrings'
+1425311339174	Delete element
+1425312393558	Encapsulate field 'imgsArrayList'
+1425314361703	Extract interface 'ImgDecomp'
+1425314426755	Move compilation units
+1425346276142	Extract interface 'DataFormat'
+1425346290752	Move compilation unit
+1425358286468	Encapsulate field 'dataSetBean'
+1425359132580	Move compilation unit
+1425361869613	Delete element
+1425379004964	Move compilation unit
+1425407941757	Delete element

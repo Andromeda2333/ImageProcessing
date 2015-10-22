@@ -1,0 +1,13 @@
+package com.scut.math.action;
+
+import java.util.ArrayList;
+
+public class ImgReadAction {
+
+	private ArrayList<String> imgNameStrings;
+	private String dirName;
+	public ImgReadAction(String dirName){
+		this.dirName=dirName;
+	}
+	
+}

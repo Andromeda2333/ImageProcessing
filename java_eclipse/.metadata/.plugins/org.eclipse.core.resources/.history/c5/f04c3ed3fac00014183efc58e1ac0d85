@@ -1,0 +1,13 @@
+package com.scut.math.action;
+
+import java.util.ArrayList;
+
+import org.opencv.core.Mat;
+
+import com.scut.math.bean.ImgBean;
+
+public class ImgDecompAction {
+	public ImgBean decomp(String fileName,Mat src) {
+		
+	}
+}

@@ -1,0 +1,22 @@
+package com.scut.math.bean;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+import libsvm.svm_node;
+public class DataSetBean {
+	private Vector<Integer> labels;
+	private ArrayList<svm_node[][]> dataSet;
+	public Vector<Integer> getLabels() {
+		return labels;
+	}
+	public void setLabels(Vector<Integer> labels) {
+		this.labels = labels;
+	}
+	public ArrayList<svm_node[][]> getDataSet() {
+		return dataSet;
+	}
+	public void setDataSet(ArrayList<svm_node[][]> dataSet) {
+		this.dataSet = dataSet;
+	}
+}

@@ -1,0 +1,16 @@
+package svm_test;
+
+import junit.framework.TestCase;
+import com.scut.math.action.ImgReadAction;
+
+public class ImgReadActionTest extends TestCase {
+
+
+	@Test
+	void setImgNameStringsTest(){
+		String path="C:\\Users\\lenovo\\Desktop\\ORL";
+		ImgReadAction imgReadAction=new ImgReadAction(path);
+		ImgReadAction.
+	}
+	
+}

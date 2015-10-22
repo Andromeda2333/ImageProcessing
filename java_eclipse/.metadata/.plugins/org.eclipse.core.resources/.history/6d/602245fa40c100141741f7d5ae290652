@@ -1,0 +1,37 @@
+package com.scut.math.bean;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+import libsvm.svm_node;
+
+public class DataBean {
+	private Vector<Integer> trainLabels;
+	private Vector<Integer> testLabels;
+	private ArrayList<svm_node[][]> trainDataS;
+	private ArrayList<svm_node[][]> testDataS;
+	public Vector<Integer> getTrainLabels() {
+		return trainLabels;
+	}
+	public void setTrainLabels(Vector<Integer> trainLabels) {
+		this.trainLabels = trainLabels;
+	}
+	public Vector<Integer> getTestLabels() {
+		return testLabels;
+	}
+	public void setTestLabels(Vector<Integer> testLabels) {
+		this.testLabels = testLabels;
+	}
+	public ArrayList<svm_node[][]> getTrainDataS() {
+		return trainDataS;
+	}
+	public void setTrainDataS(ArrayList<svm_node[][]> trainDataS) {
+		this.trainDataS = trainDataS;
+	}
+	public ArrayList<svm_node[][]> getTestDataS() {
+		return testDataS;
+	}
+	public void setTestDataS(ArrayList<svm_node[][]> testDataS) {
+		this.testDataS = testDataS;
+	}
+}

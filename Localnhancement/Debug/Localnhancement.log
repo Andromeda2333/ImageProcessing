@@ -1,0 +1,17 @@
+﻿Build started 2014/3/8 23:41:10.
+     1>Project "E:\CodeBOX\VC\Localnhancement\Localnhancement\Localnhancement.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Localnhancement.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Localnhancement.cpp
+         Localnhancement.cpp
+     1>e:\codebox\vc\localnhancement\localnhancement\localnhancement.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\codebox\vc\localnhancement\localnhancement\localnhancement.cpp(31): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\codebox\vc\localnhancement\localnhancement\localnhancement.cpp(67): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CodeBOX\VC\Localnhancement\Debug\Localnhancement.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_objdetect248d.lib opencv_ts248d.lib opencv_video248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CodeBOX\VC\Localnhancement\Debug\Localnhancement.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CodeBOX\VC\Localnhancement\Debug\Localnhancement.lib" /MACHINE:X86 Debug\Localnhancement.obj
+         Debug\stdafx.obj
+         Localnhancement.vcxproj -> E:\CodeBOX\VC\Localnhancement\Debug\Localnhancement.exe
+     1>Done Building Project "E:\CodeBOX\VC\Localnhancement\Localnhancement\Localnhancement.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.75

@@ -1,0 +1,9 @@
+package svm_test;
+
+import junit.framework.TestCase;
+import com.scut.math.action.ImgReadAction;
+
+public class ImgReadActionTest extends TestCase {
+
+	String path="C:\\Users\\lenovo\\Desktop\\ORL";
+}

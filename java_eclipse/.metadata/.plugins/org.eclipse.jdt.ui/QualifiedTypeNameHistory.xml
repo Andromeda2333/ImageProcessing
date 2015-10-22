@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.opencv.highgui.VideoCapture"/>
+<fullyQualifiedTypeName name="org.opencv.imgproc.Imgproc"/>
+<fullyQualifiedTypeName name="svm_test.ImgReadActionTest"/>
+<fullyQualifiedTypeName name="com.scut.math.action.ImgReadAction"/>
+<fullyQualifiedTypeName name="org.opencv.highgui.Highgui"/>
+<fullyQualifiedTypeName name="org.opencv.core.CvType"/>
+<fullyQualifiedTypeName name="com.scut.math.action.ImgDecompAction"/>
+<fullyQualifiedTypeName name="org.opencv.core.Core"/>
+<fullyQualifiedTypeName name="svm_test.ImgDecompActionTest"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.scut.math.bean.ImgBean"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.opencv.core.Mat"/>
+<fullyQualifiedTypeName name="com.scut.math.action.ImgDecomp"/>
+<fullyQualifiedTypeName name="com.scut.math.doAction.ImgDecompAction"/>
+<fullyQualifiedTypeName name="com.scut.math.action.DataFormat"/>
+<fullyQualifiedTypeName name="com.scut.math.doAction.SVMManageAction"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.scut.math.bean.DataSetBean"/>
+<fullyQualifiedTypeName name="com.scut.math.doAction.DataFormatAction"/>
+<fullyQualifiedTypeName name="libsvm.svm"/>
+<fullyQualifiedTypeName name="com.scut.math.bean.DataBean"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="libsvm.svm_node"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="com.scut.mat.libsvmDefault.svm_predict"/>
+</qualifiedTypeNameHistroy>

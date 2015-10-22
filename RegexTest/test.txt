@@ -1,0 +1,4 @@
+There were 2 arguments to this program.
+there are:
+hello
+world!

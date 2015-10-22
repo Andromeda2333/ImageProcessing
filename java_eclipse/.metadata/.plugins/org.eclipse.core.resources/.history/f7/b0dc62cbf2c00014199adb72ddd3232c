@@ -1,0 +1,7 @@
+package svm_test;
+
+import junit.framework.TestCase;
+
+public class ImgReadActionTest extends TestCase {
+
+}

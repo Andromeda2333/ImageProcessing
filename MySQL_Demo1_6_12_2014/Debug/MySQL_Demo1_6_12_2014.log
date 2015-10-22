@@ -1,0 +1,12 @@
+﻿Build started 2014/6/12 17:39:11.
+     1>Project "E:\CodeBOX\VC\MySQL_Demo1_6_12_2014\MySQL_Demo1_6_12_2014\MySQL_Demo1_6_12_2014.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MySQL_Demo1_6_12_2014.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt MySQL_Demo1_6_12_2014.cpp
+         MySQL_Demo1_6_12_2014.cpp
+     1>e:\codebox\vc\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014.cpp(42): warning C4244: 'initializing' : conversion from 'my_ulonglong' to 'int', possible loss of data
+     1>e:\codebox\vc\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014.cpp(67): fatal error C1075: end of file found before the left brace '{' at 'e:\codebox\vc\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014\mysql_demo1_6_12_2014.cpp(10)' was matched
+     1>Done Building Project "E:\CodeBOX\VC\MySQL_Demo1_6_12_2014\MySQL_Demo1_6_12_2014\MySQL_Demo1_6_12_2014.vcxproj" (ClCompile target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.74

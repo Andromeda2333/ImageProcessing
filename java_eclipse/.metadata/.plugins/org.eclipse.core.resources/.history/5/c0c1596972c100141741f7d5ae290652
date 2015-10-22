@@ -1,0 +1,11 @@
+package com.scut.math.bean;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+import libsvm.svm_node;
+public class DataSetBean {
+	private ArrayList<String> personNames;
+	private ArrayList<Integer> imgIndex;
+	private svm_node[][] datas;
+}

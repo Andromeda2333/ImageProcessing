@@ -1,0 +1,12 @@
+package svm_test;
+
+import org.opencv.core.*;
+
+public class OpencvTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

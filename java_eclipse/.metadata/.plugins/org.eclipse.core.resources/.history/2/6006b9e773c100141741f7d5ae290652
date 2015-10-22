@@ -1,0 +1,16 @@
+package svm_test;
+
+import org.junit.Test;
+
+import com.scut.math.doAction.SVMManageAction;
+
+public class SVMManageActionTest {
+
+	@Test
+	public void test() {
+		SVMManageAction s=new SVMManageAction();
+		s.setDataSetBean("C:\\Users\\lenovo\\Desktop\\ORL");
+		s.generatTrainTestData("s2");
+	}
+
+}

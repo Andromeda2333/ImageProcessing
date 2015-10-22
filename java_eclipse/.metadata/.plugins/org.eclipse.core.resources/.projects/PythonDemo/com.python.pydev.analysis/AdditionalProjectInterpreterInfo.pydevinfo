@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE
+E:\code\java_eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\PythonDemo\com.python.pydev.analysis\v2_indexcache
+Test|1425797562858|E:\code\java_eclipse\PythonDemo\src\Test.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Test
+-- END DICTIONARY
+-- START TREE 1
+4
+a|1|a!11@
+x|1|x!11@
+y|1|y!11@
+z|1|z!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE
