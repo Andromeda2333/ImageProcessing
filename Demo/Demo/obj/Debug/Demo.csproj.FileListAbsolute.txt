@@ -1,0 +1,6 @@
+E:\CodeBOX\VC\Demo\Demo\bin\Debug\Demo.exe.config
+E:\CodeBOX\VC\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+E:\CodeBOX\VC\Demo\Demo\bin\Debug\Demo.exe
+E:\CodeBOX\VC\Demo\Demo\bin\Debug\Demo.pdb
+E:\CodeBOX\VC\Demo\Demo\obj\Debug\Demo.exe
+E:\CodeBOX\VC\Demo\Demo\obj\Debug\Demo.pdb

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Combi4-17-2014", "Combi4-17-2014\Combi4-17-2014.vcxproj", "{C386304C-DAED-472C-B43C-56C668462148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C386304C-DAED-472C-B43C-56C668462148}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C386304C-DAED-472C-B43C-56C668462148}.Debug|Win32.Build.0 = Debug|Win32
+		{C386304C-DAED-472C-B43C-56C668462148}.Release|Win32.ActiveCfg = Release|Win32
+		{C386304C-DAED-472C-B43C-56C668462148}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,151 @@
+// BagOneZero5-10-2014.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+/*回溯法解决0-1背包问题**/
+
+vector<bool> KnapsackBack(const vector<pair<double,double>>&obj,double bagWeight);
+std::pair<double,double> GetPriceEst(const vector<pair<double,double>>&obj,const int k,const double bagWeight,
+	const double pcur,const double wcur);
+int _tmain(int argc, _TCHAR* argv[])
+{
+	double weight[5]={5,15,25,27,30};
+	double price[5]={12,30,44,46,50};
+	vector<pair<double,double>> obj(5);
+	int i=0;
+	generate(obj.begin(),obj.end(),[&]()
+	{
+		auto temp=pair<double,double>(weight[i],price[i]);
+		++i;
+		return temp;
+	});
+	sort(obj.begin(),obj.end(),[](pair<double,double> lhs,pair<double,double>rhs)
+	{
+		return lhs.second/lhs.first>rhs.second/rhs.first;
+	});
+	for each (auto i in obj)
+	{
+		std::cout<<i.first<<" "<<i.second<<'\n';
+	}
+
+	vector<bool> res=KnapsackBack(obj,50);
+	for each (auto var in res)
+	{
+		static int i=1;
+		std::cout<<i<<"****"<<var<<'\n';
+	}
+	return 0;
+}
+
+vector<bool> KnapsackBack( const vector<pair<double,double>>&obj ,double bagWeight)
+{
+	double wcur=0,pcur=0,ptotal=0,pest=0;
+	int n=obj.size();
+	int k=0;
+	vector<bool> res(n,false);
+
+	while (k>=0)
+	{
+		for each (auto var in res)
+		{
+			static int i=1;
+			std::cout<<boolalpha<<var<<" ";
+		}
+		std::cout<<std::endl;
+		auto p=GetPriceEst(obj,k,bagWeight,pcur,wcur);
+		int i=p.second;
+		pest=p.first;
+		if (pest>ptotal)
+		{
+			for (i=k;i<n;++i)
+			{
+				if (wcur+obj[i].first<=bagWeight)
+				{
+					wcur+=obj[i].first;
+					pcur+=obj[i].second;
+					res[i]=true;
+				} 
+				else
+				{
+					res[i]=false;
+					break;
+				}
+			}
+			if (i>=n)
+			{
+				if (pcur>ptotal)
+				{
+					ptotal=pcur;
+					k=n;
+				}
+			}
+			else
+			{
+				k=i+1;
+			}
+		}
+		else
+		{
+			while ((i>=0)&&!res[i])
+			{
+				i--;
+			}
+			if (i<0)
+			{
+				break;
+			}
+			else
+			{
+				wcur-=obj[i].first;
+				pcur-=obj[i].second;
+				res[i]=false;
+				k=i+1;
+			}
+
+			//for (int j=i;j>=0;--j)
+			//{
+			//	if (j<0)
+			//	{
+			//		break;
+			//	}
+
+			//	if (res[j]==true)
+			//	{
+			//		res[j]=false;
+			//		k=j+1;
+			//		wcur-=obj[j].first;
+			//		pcur-=obj[j].second;
+			//		break;
+			//	}
+			//}
+		}
+	}
+	return res;
+}
+
+std::pair<double,double> GetPriceEst( const vector<pair<double,double>>&obj,const int k,
+	const double bagWeight,const double pcur,const double wcur)
+{
+	int i=0;
+	double tempW=wcur,tempP=pcur;
+	for (i=k;i<obj.size();++i)
+	{
+		tempW+=obj[i].first;
+		if (tempW<bagWeight)
+		{
+			tempP+=obj[i].second;
+		} 
+		else
+		{
+			tempP+=(bagWeight-tempW+obj[i].first)*obj[i].second/obj[i].first;
+			break;
+		}
+	}
+	return std::pair<double,double>(tempP,i);
+}
+

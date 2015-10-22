@@ -1,0 +1,15 @@
+﻿生成启动时间为 2014/3/6 10:47:11。
+     1>项目“E:\CodeBOX\VC\DataIN\DataIN\DataIN.vcxproj”在节点 2 上(ClCompile 个目标)。
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DataIN.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DataIN.cpp
+         DataIN.cpp
+     1>e:\codebox\vc\datain\datain\datain.cpp(16): error C2143: 语法错误 : 缺少“)”(在“{”的前面)
+     1>e:\codebox\vc\datain\datain\datain.cpp(16): error C2601: “vec”: 本地函数定义是非法的
+                 e:\codebox\vc\datain\datain\datain.cpp(15): 此行有一个“{”没有匹配项
+     1>e:\codebox\vc\datain\datain\datain.cpp(16): error C2059: 语法错误:“)”
+     1>e:\codebox\vc\datain\datain\datain.cpp(16): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>已完成生成项目“E:\CodeBOX\VC\DataIN\DataIN\DataIN.vcxproj”(ClCompile 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.10
